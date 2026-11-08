@@ -1,0 +1,130 @@
+/* ===== Virtual Dog Park stylesheet ===== */
+
+/* Use a soft, readable base for every browser */
+* {
+  box-sizing: border-box; /* padding no longer makes boxes wider than expected */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #2b2b2b;
+  background-color: #fdf8f0; /* warm cream background */
+}
+
+/* ===== Header ===== */
+.site-header {
+  background-color: #6a994e; /* soft park green */
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.site-header h1 {
+  margin: 0 0 10px;
+  font-size: 2.2rem;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== Main content ===== */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.encyclopedia h2 {
+  text-align: center;
+  color: #386641;
+  margin-bottom: 5px;
+}
+
+.section-note {
+  text-align: center;
+  color: #6b6b6b;
+  margin-top: 0;
+}
+
+/* Cards sit in a row on laptops and wrap on phones */
+.breed-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* one column by default (phones) */
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* On laptops (wider than 700px), show three columns */
+@media (min-width: 700px) {
+  .breed-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.breed-card {
+  background-color: #ffffff;
+  border: 2px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease;
+}
+
+/* The "favorite" state, toggled by script.js */
+.breed-card.favorite {
+  border-color: #e9c46a;
+  background-color: #fff8e6;
+}
+
+.breed-card img {
+  width: 140px;
+  height: 140px;
+}
+
+.breed-card h3 {
+  color: #386641;
+  margin: 10px 0;
+}
+
+.breed-card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+
+.breed-card li {
+  margin-bottom: 8px;
+}
+
+.favorite-btn {
+  background-color: #6a994e;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.favorite-btn:hover {
+  background-color: #557f3d;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b6b6b;
+  font-size: 0.9rem;
+}

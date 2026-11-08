@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Illustration of a Poodle">
+  <!-- A simple, flat-style Poodle: fluffy cream curls, topknot, fluffy tail -->
+  <!-- Ground shadow -->
+  <ellipse cx="150" cy="265" rx="90" ry="12" fill="#e8e0d4"/>
+  <!-- Body (fluffy, made of rounded puffs) -->
+  <ellipse cx="150" cy="205" rx="80" ry="46" fill="#fbf6ec"/>
+  <circle cx="95" cy="200" r="22" fill="#fbf6ec"/>
+  <circle cx="205" cy="200" r="22" fill="#fbf6ec"/>
+  <!-- Head -->
+  <circle cx="150" cy="128" r="48" fill="#fbf6ec"/>
+  <!-- Topknot puff on top of head -->
+  <circle cx="150" cy="86" r="22" fill="#fbf6ec"/>
+  <circle cx="132" cy="90" r="14" fill="#fbf6ec"/>
+  <circle cx="168" cy="90" r="14" fill="#fbf6ec"/>
+  <!-- Floppy ears covered in curls -->
+  <circle cx="106" cy="135" r="16" fill="#f0e6d2"/>
+  <circle cx="194" cy="135" r="16" fill="#f0e6d2"/>
+  <circle cx="104" cy="152" r="13" fill="#f0e6d2"/>
+  <circle cx="196" cy="152" r="13" fill="#f0e6d2"/>
+  <!-- Eyes -->
+  <circle cx="133" cy="126" r="5" fill="#2b2b2b"/>
+  <circle cx="167" cy="126" r="5" fill="#2b2b2b"/>
+  <circle cx="135" cy="124" r="1.6" fill="#ffffff"/>
+  <circle cx="169" cy="124" r="1.6" fill="#ffffff"/>
+  <!-- Muzzle -->
+  <ellipse cx="150" cy="150" rx="18" ry="13" fill="#ffffff"/>
+  <circle cx="150" cy="144" r="6.5" fill="#2b2b2b"/>
+  <!-- Nose/mouth line -->
+  <path d="M143 158 Q150 164 157 158" stroke="#2b2b2b" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Legs (scissored pom poms at the ankles) -->
+  <rect x="106" y="225" width="15" height="30" rx="5" fill="#fbf6ec"/>
+  <rect x="179" y="225" width="15" height="30" rx="5" fill="#fbf6ec"/>
+  <circle cx="113" cy="258" r="12" fill="#f0e6d2"/>
+  <circle cx="186" cy="258" r="12" fill="#f0e6d2"/>
+  <!-- Fluffy pom-pom tail -->
+  <circle cx="240" cy="180" r="16" fill="#fbf6ec"/>
+</svg>
