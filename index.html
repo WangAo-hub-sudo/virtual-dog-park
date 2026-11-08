@@ -96,15 +96,27 @@
 
       <!-- Dog status card (hidden until a dog is adopted) -->
       <div id="dog-status" class="dog-status hidden">
+        <!-- The dog's picture grows in size as it matures (see script.js). -->
+        <img id="dog-photo" class="dog-photo size-puppy" alt="" />
         <h3 id="dog-display-name"></h3>
         <p><strong>Breed:</strong> <span id="dog-breed"></span></p>
         <p><strong>Day:</strong> <span id="dog-day"></span></p>
         <p><strong>Growth stage:</strong> <span id="dog-stage"></span></p>
         <p><strong>Happiness:</strong> <span id="dog-happiness"></span> / 100</p>
 
+        <!-- Visual growth bar (the stage name is also written out above) -->
+        <div class="growth-track" aria-hidden="true">
+          <div id="growth-fill"></div>
+        </div>
+        <div class="growth-labels">
+          <span>Puppy</span><span>Young Dog</span><span>Adult Dog</span>
+        </div>
+
         <div class="action-buttons">
           <button id="feed-btn" type="button">Feed</button>
           <button id="play-btn" type="button">Play</button>
+          <button id="nextday-btn" type="button">Next Day</button>
+          <button id="startover-btn" type="button" class="start-over">Start Over</button>
         </div>
       </div>
     </section>

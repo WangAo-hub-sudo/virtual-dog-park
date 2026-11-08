@@ -225,3 +225,60 @@ main {
 .action-buttons button:hover {
   background-color: #557f3d;
 }
+
+/* Start Over is a destructive action, so it is shown in red */
+.action-buttons button.start-over {
+  background-color: #c0392b;
+}
+
+.action-buttons button.start-over:hover {
+  background-color: #96281b;
+}
+
+/* The adoption form hides itself once a dog has been adopted */
+.adopt-form.hidden {
+  display: none;
+}
+
+/* ===== Growing dog picture ===== */
+.dog-photo {
+  transition: width 0.3s ease;
+}
+
+.dog-photo.size-puppy {
+  width: 70px;
+  height: 70px;
+}
+
+.dog-photo.size-young {
+  width: 100px;
+  height: 100px;
+}
+
+.dog-photo.size-adult {
+  width: 130px;
+  height: 130px;
+}
+
+/* ===== Growth bar ===== */
+.growth-track {
+  background-color: #eee;
+  border-radius: 10px;
+  height: 14px;
+  margin: 14px 0 6px;
+  overflow: hidden;
+}
+
+.growth-fill {
+  background-color: #e9c46a;
+  height: 100%;
+  width: 25%; /* Day 1 (Puppy) starts here; fills to 100% by Day 4 */
+  transition: width 0.3s ease;
+}
+
+.growth-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #6b6b6b;
+}
