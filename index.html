@@ -67,6 +67,47 @@
 
       </div>
     </section>
+
+    <!-- ===== My Virtual Dog ===== -->
+    <section class="my-dog">
+      <h2>My Virtual Dog</h2>
+      <p class="section-note">Adopt a dog, give it a name, and keep it happy.</p>
+
+      <!-- Adoption form -->
+      <form id="adopt-form" class="adopt-form">
+        <div class="form-row">
+          <label for="breed-select">Choose a breed:</label>
+          <select id="breed-select">
+            <option value="Beagle">Beagle</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="Poodle">Poodle</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="dog-name">Name your dog:</label>
+          <input type="text" id="dog-name" maxlength="20" placeholder="e.g. Bella" />
+        </div>
+
+        <button type="submit" class="adopt-btn">Adopt</button>
+        <!-- Helpful message shown when the name is invalid -->
+        <p id="form-error" class="form-error" role="alert"></p>
+      </form>
+
+      <!-- Dog status card (hidden until a dog is adopted) -->
+      <div id="dog-status" class="dog-status hidden">
+        <h3 id="dog-display-name"></h3>
+        <p><strong>Breed:</strong> <span id="dog-breed"></span></p>
+        <p><strong>Day:</strong> <span id="dog-day"></span></p>
+        <p><strong>Growth stage:</strong> <span id="dog-stage"></span></p>
+        <p><strong>Happiness:</strong> <span id="dog-happiness"></span> / 100</p>
+
+        <div class="action-buttons">
+          <button id="feed-btn" type="button">Feed</button>
+          <button id="play-btn" type="button">Play</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

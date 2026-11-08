@@ -128,3 +128,100 @@ main {
   color: #6b6b6b;
   font-size: 0.9rem;
 }
+
+/* ===== My Virtual Dog ===== */
+.my-dog {
+  margin-top: 40px;
+}
+
+.my-dog h2 {
+  text-align: center;
+  color: #386641;
+  margin-bottom: 5px;
+}
+
+.adopt-form {
+  max-width: 420px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border: 2px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.form-row {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.form-row input,
+.form-row select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.adopt-btn {
+  background-color: #e9c46a;
+  color: #2b2b2b;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  min-height: 1.2em;
+  margin: 8px 0 0;
+}
+
+.dog-status {
+  max-width: 420px;
+  margin: 20px auto;
+  background-color: #fff8e6;
+  border: 2px dashed #e9c46a;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hide the status card before any dog is adopted */
+.dog-status.hidden {
+  display: none;
+}
+
+.dog-status h3 {
+  color: #386641;
+  margin-top: 0;
+}
+
+.action-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.action-buttons button {
+  background-color: #6a994e;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  background-color: #557f3d;
+}
